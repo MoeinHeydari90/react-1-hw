@@ -1,4 +1,4 @@
-const OurPartnersData = [
+const ourPartnersData = [
     {
         name: "Alphabet",
         logo: "./business_partners/alphabet-logo.png",
@@ -41,4 +41,4 @@ const OurPartnersData = [
     },
 ];
 
-export default OurPartnersData;
+export default ourPartnersData;

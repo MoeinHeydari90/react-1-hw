@@ -1,5 +1,5 @@
 import styles from "../../components/cards/OurPartnersCard.module.css";
-import OurPartnersData from "@/data/ourPartnersData";
+import ourPartnersData from "@/data/ourPartnersData";
 import OurPartnersCard from "@/components/cards/OurPartnersCard";
 
 const OurPartners = () => {
@@ -11,7 +11,7 @@ const OurPartners = () => {
                 industries to make every journey extraordinary.
             </p>
             <div className={styles.ourPartnersCards}>
-                {OurPartnersData.map((card, index) => (
+                {ourPartnersData.map((card, index) => (
                     <OurPartnersCard key={index} name={card.name} logo={card.logo} url={card.url} />
                 ))}
             </div>

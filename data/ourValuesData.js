@@ -1,4 +1,4 @@
-const OurValueData = [
+const ourValueData = [
     {
         title: "Exploration",
         text: "We are driven by a deep-seated desire to explore the unknown. We believe that the pursuit of discovery is at the heart of human nature, and we are committed to pushing the boundaries of what is possible.",
@@ -17,4 +17,4 @@ const OurValueData = [
     },
 ];
 
-export default OurValueData;
+export default ourValueData;

@@ -1,4 +1,4 @@
-const OurCrewData = [
+const ourCrewData = [
     {
         image: "./crew/image-sarah-vega.png",
         position: "Captain",
@@ -36,4 +36,4 @@ const OurCrewData = [
     },
 ];
 
-export default OurCrewData;
+export default ourCrewData;

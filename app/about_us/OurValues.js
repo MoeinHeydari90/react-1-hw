@@ -1,6 +1,6 @@
 import styles from "../../components/cards/OurValuesCard.module.css";
 
-import OurValuesData from "@/data/ourValuesData";
+import ourValuesData from "@/data/ourValuesData";
 import OurValuesCard from "@/components/cards/OurValuesCard";
 
 const OurValues = () => {
@@ -8,7 +8,7 @@ const OurValues = () => {
         <>
             <h1 className={styles.ourValuesCardTitle}>Our Values</h1>
             <div className={styles.ourValuesCard}>
-                {OurValuesData.map((card, index) => (
+                {ourValuesData.map((card, index) => (
                     <OurValuesCard key={index} title={card.title} text={card.text} />
                 ))}
             </div>

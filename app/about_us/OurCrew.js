@@ -1,6 +1,6 @@
 import styles from "../../components/cards/OurCrewCard.module.css";
 
-import OurCrewData from "@/data/ourCrewData";
+import ourCrewData from "@/data/ourCrewData";
 import OurCrewCard from "@/components/cards/OurCrewCard";
 
 const OurCrew = () => {
@@ -16,7 +16,7 @@ const OurCrew = () => {
                 </strong>
             </p>
             <div className={styles.ourCrewCards}>
-                {OurCrewData.map((card, index) => (
+                {ourCrewData.map((card, index) => (
                     <OurCrewCard
                         key={index}
                         image={card.image}
