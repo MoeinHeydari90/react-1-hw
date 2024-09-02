@@ -30,8 +30,19 @@ export const Destinations = () => {
         // If you press the "ADD PLANET" the selected planet should display "SELECTED"
         // And the counter should update, how many planets are selected (numberOfPlanets)
         console.log(`You seleceted the following planet: ${name}, with the index of ${index}`);
-    };
+        const updatedPlanets = [...selectedPlanets];
+        const planetIndex = updatedPlanets.indexOf(name);
 
+        if (planetIndex > -1) {
+            // Planet already selected, remove it
+            updatedPlanets.splice(planetIndex, 1);
+        } else {
+            // Planet not selected, add it
+            updatedPlanets.push(name);
+        }
+
+        onAddPlanet(updatedPlanets); // Update state with the new list
+    };
     return (
         <div className="fullBGpicture">
             <main className="mainContent">
