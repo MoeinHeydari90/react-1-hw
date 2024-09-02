@@ -1,0 +1,30 @@
+.ourValuesCard {
+    display: flex;
+    gap: var(--spacing-20);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ourValuesItem {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-24);
+}
+
+.ourValuesCardTitle {
+    padding: 10px 0;
+}
+
+/* For larger screens (desktops) */
+@media screen and (min-width: 768px) {
+    .ourValuesItem {
+        flex: 0 1 48%;
+    }
+}
+
+/* For small screens (mobile devices) */
+@media screen and (max-width: 767px) {
+    .ourValuesItem {
+        flex: 0 1 100%;
+    }
+}

@@ -1,0 +1,29 @@
+.ourPartnersTitle {
+    padding: 10px 0;
+}
+
+.ourPartnersText {
+    padding-bottom: var(--spacing-40);
+}
+
+.ourPartnersCards {
+    display: flex;
+    gap: var(--spacing-20);
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ourPartnersItem {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.ourPartnersItemImage {
+    width: 60%;
+    height: 60%;
+    cursor: pointer;
+}
