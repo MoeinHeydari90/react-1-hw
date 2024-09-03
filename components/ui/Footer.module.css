@@ -48,3 +48,13 @@
 .footerList li {
     padding-block: var(--spacing-04);
 }
+
+.socialMediaIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.socialMediaLink {
+    justify-content: center;
+    align-items: center;
+}

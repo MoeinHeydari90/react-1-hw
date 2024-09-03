@@ -6,7 +6,7 @@ import styles from "@/components/destination/destination.module.css";
 import { AddWishlistItem } from "@/components/destination/AddWishlistItem";
 import { PlanetWishListItem } from "../../components/destination/PlanetWishlistItem";
 import { PlanetCard } from "@/components/destination/PlanetCard";
-import { PlanetsData } from "@/data/planetsData";
+import { planetsData } from "@/data/planetsData";
 
 export const Destinations = () => {
     const [selectedPlanets, onAddPlanet] = useState([]);
@@ -79,7 +79,7 @@ export const Destinations = () => {
                     {/* Use the README.md file for descriptions */}
                     {/* Create a <PlanetCard /> component, which accepts the following properties: */}
                     {/* name, description, thumbnail, isSelected, onAddOrRemovePlanet */}
-                    {PlanetsData.map((planet, index) => (
+                    {planetsData.map((planet, index) => (
                         <PlanetCard
                             key={index}
                             name={planet.name}
