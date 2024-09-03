@@ -49,12 +49,14 @@
     padding-block: var(--spacing-04);
 }
 
+.socialMediaLink {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-08); /* Adds space between the icon and the title */
+}
+
 .socialMediaIcon {
     width: 20px;
     height: 20px;
-}
-
-.socialMediaLink {
-    justify-content: center;
-    align-items: center;
+    flex-shrink: 0; /* Prevents the icon from shrinking */
 }
