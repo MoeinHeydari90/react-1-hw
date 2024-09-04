@@ -1,12 +1,12 @@
-import styles from "../../components/cards/OurValuesCard.module.css";
-
+import OurValuesCard from "@/components/about_us/OurValuesCard";
 import ourValuesData from "@/data/ourValuesData.json";
-import OurValuesCard from "@/components/cards/OurValuesCard";
+
+import styles from "../../components/about_us/OurValuesCard.module.css";
 
 const OurValues = () => {
     return (
         <>
-            <h1 className={styles.ourValuesCardTitle}>Our Values</h1>
+            <h2 className={styles.ourValuesCardTitle}>Our Values</h2>
             <div className={styles.ourValuesCard}>
                 {ourValuesData.map((card, index) => (
                     <OurValuesCard key={index} title={card.title} text={card.text} />

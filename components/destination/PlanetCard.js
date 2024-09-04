@@ -2,7 +2,7 @@ import styles from "@/components/destination/destination.module.css";
 
 export const PlanetCard = ({ name, description, thumbnail, isSelected, onAddOrRemovePlanet }) => {
     return (
-        <div className={styles.planetCard}>
+        <div className={`${styles.planetCard} ${isSelected ? styles.selected : ""}`}>
             <img className={styles.planetThumbnail} src={thumbnail} alt={name} />
             <div className={styles.planetDescription}>
                 <h2>

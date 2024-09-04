@@ -15,7 +15,7 @@ export const Destinations = () => {
     let numberOfPlanets = 0;
 
     const onAddOrRemovePlanet = (name, index) => {
-        console.log(`You seleceted the following planet: ${name}, with the index of ${index}`);
+        console.log(`You selected the following planet: ${name}, with the index of ${index}`);
         const updatedPlanets = [...selectedPlanets];
         const planetIndex = updatedPlanets.indexOf(name);
 

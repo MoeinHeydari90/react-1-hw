@@ -1,11 +1,12 @@
-import styles from "../../components/cards/OurPartnersCard.module.css";
+import OurPartnersCard from "@/components/about_us/OurPartnersCard";
 import ourPartnersData from "@/data/ourPartnersData.json";
-import OurPartnersCard from "@/components/cards/OurPartnersCard";
+
+import styles from "../../components/about_us/OurPartnersCard.module.css";
 
 const OurPartners = () => {
     return (
         <>
-            <h1 className={styles.ourPartnersTitle}>Our Partners</h1>
+            <h2 className={styles.ourPartnersTitle}>Our Partners</h2>
             <p className={styles.ourPartnersText}>
                 We collaborate with some of the most respected names in the space and technology
                 industries to make every journey extraordinary.
