@@ -4,7 +4,7 @@ export default function OurCrewCard({ image, position, name, description }) {
     return (
         <div className={styles.ourCrewItem}>
             <div className={styles.ourCrewItemContainer}>
-                <img className={styles.ourCrewItemImage} src={image} alt={name} />
+                <img className={styles.ourCrewItemImage} src={image} />
                 <div className={styles.ourCrewItemDescription}>
                     <p>{description}</p>
                 </div>

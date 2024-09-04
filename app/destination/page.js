@@ -15,10 +15,6 @@ export const Destinations = () => {
     let numberOfPlanets = 0;
 
     const onAddOrRemovePlanet = (name, index) => {
-        // TASK - React 1 week 2
-        // Implement this function
-        // If you press the "ADD PLANET" the selected planet should display "SELECTED"
-        // And the counter should update, how many planets are selected (numberOfPlanets)
         console.log(`You seleceted the following planet: ${name}, with the index of ${index}`);
         const updatedPlanets = [...selectedPlanets];
         const planetIndex = updatedPlanets.indexOf(name);
@@ -39,9 +35,6 @@ export const Destinations = () => {
                 <h1>Travel destinations</h1>
                 <section className="card">
                     <h2>Wishlist</h2>
-                    {/* TASK - React 1 week 2 */}
-                    {/* Display the number Of selected planets */}
-                    {/* Display the "no planets" message if it is empty! */}
                     <p>
                         {selectedPlanets.length === 0
                             ? "No planets in wishlist :("
@@ -74,11 +67,6 @@ export const Destinations = () => {
                 </section>
                 <section className="card">
                     <h2>Possible destinations</h2>
-                    {/* TASK - React 1 week 2 */}
-                    {/* Add all 4 planets! Europa, Moon, Mars, Titan  */}
-                    {/* Use the README.md file for descriptions */}
-                    {/* Create a <PlanetCard /> component, which accepts the following properties: */}
-                    {/* name, description, thumbnail, isSelected, onAddOrRemovePlanet */}
                     {planetsData.map((planet, index) => (
                         <PlanetCard
                             key={index}
