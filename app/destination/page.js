@@ -6,7 +6,7 @@ import styles from "@/components/destination/destination.module.css";
 import { AddWishlistItem } from "@/components/destination/AddWishlistItem";
 import { PlanetWishListItem } from "../../components/destination/PlanetWishlistItem";
 import { PlanetCard } from "@/components/destination/PlanetCard";
-import { planetsData } from "@/data/planetsData";
+import planetsData from "@/data/planetsData.json";
 
 export const Destinations = () => {
     const [selectedPlanets, onAddPlanet] = useState([]);

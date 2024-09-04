@@ -1,6 +1,6 @@
 import styles from "../../components/cards/OurValuesCard.module.css";
 
-import ourValuesData from "@/data/ourValuesData";
+import ourValuesData from "@/data/ourValuesData.json";
 import OurValuesCard from "@/components/cards/OurValuesCard";
 
 const OurValues = () => {

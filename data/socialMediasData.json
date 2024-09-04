@@ -1,0 +1,27 @@
+[
+    {
+        "url": "https://facebook.com",
+        "title": "Facebook",
+        "icon": "/socialmedia/facebook.png"
+    },
+    {
+        "url": "https://instagram.com",
+        "title": "Instagram",
+        "icon": "/socialmedia/instagram.png"
+    },
+    {
+        "url": "https://linkedin.com",
+        "title": "LinkedIn",
+        "icon": "/socialmedia/linkedin.png"
+    },
+    {
+        "url": "https://tiktok.com",
+        "title": "Tiktok",
+        "icon": "/socialmedia/tik-tok.png"
+    },
+    {
+        "url": "https://google.com",
+        "title": "On the streets at night",
+        "icon": "/socialmedia/periscope.png"
+    }
+]

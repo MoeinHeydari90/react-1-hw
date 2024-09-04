@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SocialMediaItem } from "./SocialMediaItem";
-import { socialMedias } from "../../data/socialMediasData";
+import socialMediasData from "../../data/socialMediasData.json";
 
 import styles from "./Footer.module.css";
 
@@ -35,7 +35,7 @@ export const Footer = () => {
             <div className={styles.footerLinks}>
                 <h3>Follow us</h3>
                 <ul className={styles.footerList}>
-                    {socialMedias.map((media, index) => (
+                    {socialMediasData.map((media, index) => (
                         <SocialMediaItem
                             key={index}
                             url={media.url}

@@ -1,5 +1,5 @@
 import styles from "../../components/cards/OurPartnersCard.module.css";
-import ourPartnersData from "@/data/ourPartnersData";
+import ourPartnersData from "@/data/ourPartnersData.json";
 import OurPartnersCard from "@/components/cards/OurPartnersCard";
 
 const OurPartners = () => {
