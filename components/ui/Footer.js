@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SocialMediaItem } from "./SocialMediaItem";
-import socialMediasData from "../../data/socialMediasData.json";
+import socialMediasData from "@/data/socialMediasData.json";
 
 import styles from "./Footer.module.css";
 

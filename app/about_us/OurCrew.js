@@ -1,7 +1,7 @@
 import OurCrewCard from "@/components/about_us/OurCrewCard";
 import ourCrewData from "@/data/ourCrewData.json";
 
-import styles from "../../components/about_us/OurCrewCard.module.css";
+import styles from "@/components/about_us/OurCrewCard.module.css";
 
 const OurCrew = () => {
     return (

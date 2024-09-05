@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./destination.module.css";
 
-export const PlanetWishlistItem = ({ name, onRemove, thumbnail }) => {
+const PlanetWishlistItem = ({ name, onRemove, thumbnail }) => {
     return (
         <div className={styles.wishlistItem}>
             <img className={styles.wishlistItemThumbnail} src={thumbnail} alt="" />
@@ -12,3 +12,5 @@ export const PlanetWishlistItem = ({ name, onRemove, thumbnail }) => {
         </div>
     );
 };
+
+export default PlanetWishlistItem;

@@ -2,17 +2,13 @@
 
 import { useState } from "react";
 
-import styles from "@/components/destination/destination.module.css";
 import { AddWishlistItem } from "@/components/destination/AddWishlistItem";
-import { PlanetWishListItem } from "../../components/destination/PlanetWishlistItem";
-import { PlanetCard } from "@/components/destination/PlanetCard";
+import PlanetWishListItem from "@/components/destination/PlanetWishlistItem";
+import PlanetCard from "@/components/destination/PlanetCard";
 import planetsData from "@/data/planetsData.json";
 
 export const Destinations = () => {
     const [selectedPlanets, onAddPlanet] = useState([]);
-
-    let isPlanetSelected = false;
-    let numberOfPlanets = 0;
 
     const onAddOrRemovePlanet = (name, index) => {
         console.log(`You selected the following planet: ${name}, with the index of ${index}`);

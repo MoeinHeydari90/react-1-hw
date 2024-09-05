@@ -1,7 +1,7 @@
 import OurValuesCard from "@/components/about_us/OurValuesCard";
 import ourValuesData from "@/data/ourValuesData.json";
 
-import styles from "../../components/about_us/OurValuesCard.module.css";
+import styles from "@/components/about_us/OurValuesCard.module.css";
 
 const OurValues = () => {
     return (

@@ -1,7 +1,7 @@
 import OurPartnersCard from "@/components/about_us/OurPartnersCard";
 import ourPartnersData from "@/data/ourPartnersData.json";
 
-import styles from "../../components/about_us/OurPartnersCard.module.css";
+import styles from "@/components/about_us/OurPartnersCard.module.css";
 
 const OurPartners = () => {
     return (
