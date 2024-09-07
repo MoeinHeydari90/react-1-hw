@@ -1,7 +1,7 @@
 const OurMission = () => {
     return (
         <>
-            <h1>Our Mission</h1>
+            <h2>Our Mission</h2>
             <p>
                 At Galactica, our mission is to unlock the wonders of the universe for everyone. We
                 believe that space is the final frontier and that the opportunity to explore it

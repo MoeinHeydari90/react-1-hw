@@ -1,12 +1,12 @@
-import styles from "../../components/cards/OurCrewCard.module.css";
+import OurCrewCard from "@/components/about_us/OurCrewCard";
+import ourCrewData from "@/data/ourCrewData.json";
 
-import OurCrewData from "@/data/ourCrewData";
-import OurCrewCard from "@/components/cards/OurCrewCard";
+import styles from "@/components/about_us/OurCrewCard.module.css";
 
 const OurCrew = () => {
     return (
         <>
-            <h1 className={styles.ourCrewCardsTitle}>Our Crew</h1>
+            <h2 className={styles.ourCrewCardsTitle}>Our Crew</h2>
 
             <p className={styles.ourCrewDescription}>
                 Our crew is the heart and soul of Galactica. We are a diverse team of seasoned space
@@ -16,7 +16,7 @@ const OurCrew = () => {
                 </strong>
             </p>
             <div className={styles.ourCrewCards}>
-                {OurCrewData.map((card, index) => (
+                {ourCrewData.map((card, index) => (
                     <OurCrewCard
                         key={index}
                         image={card.image}

@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 
 export const Crew = () => {
     return (
-        <div className={styles.fullBGpicture}>
+        <div className="fullBGpicture">
             <main className="mainContent">
                 <section className="card">
                     <OurMission />
