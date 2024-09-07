@@ -2,7 +2,7 @@ import Link from "next/link";
 import classNames from "classnames";
 import styles from "./Navbar.module.css";
 
-export const NavItem = ({ title, link, isActive }) => {
+export const NavItem = ({ index, title, link, isActive }) => {
     return (
         <li
             className={classNames(styles.navbarLinks, {
@@ -10,7 +10,7 @@ export const NavItem = ({ title, link, isActive }) => {
             })}
         >
             <Link href={link}>
-                <b>{title.slice(0, 2)}</b> {title.slice(3)}
+                <b> 0{index + 1}</b> {title}
             </Link>
         </li>
     );

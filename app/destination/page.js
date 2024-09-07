@@ -13,17 +13,16 @@ export const Destinations = () => {
     const onAddOrRemovePlanet = (name, index) => {
         console.log(`You selected the following planet: ${name}, with the index of ${index}`);
         const updatedPlanets = [...selectedPlanets];
-        const planetIndex = updatedPlanets.indexOf(name);
 
-        if (planetIndex > -1) {
+        if (updatedPlanets.includes(name)) {
             // Planet already selected, remove it
-            updatedPlanets.splice(planetIndex, 1);
+            const filteredPlanets = updatedPlanets.filter((planet) => planet !== name);
+            onAddPlanet(filteredPlanets);
         } else {
             // Planet not selected, add it
             updatedPlanets.push(name);
+            onAddPlanet(updatedPlanets);
         }
-
-        onAddPlanet(updatedPlanets); // Update state with the new list
     };
     return (
         <div className="fullBGpicture">

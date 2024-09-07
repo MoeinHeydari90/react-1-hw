@@ -40,7 +40,7 @@ export const Footer = () => {
                 <ul className={styles.footerList}>
                     {socialMediasData.map((media, index) => (
                         <SocialMediaItem
-                            key={index}
+                            key={`social-${index}`}
                             url={media.url}
                             title={media.title}
                             icon={media.icon}

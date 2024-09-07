@@ -7,15 +7,15 @@ import styles from "./Navbar.module.css";
 
 const navbarItems = [
     {
-        title: "01 ABOUT US",
+        title: "ABOUT US",
         link: "/about_us",
     },
     {
-        title: "02 DESTINATION",
+        title: "DESTINATION",
         link: "/destination",
     },
     {
-        title: "03 NASA COLLABORATION",
+        title: "NASA COLLABORATION",
         link: "/nasa_collaboration",
     },
 ];
@@ -37,6 +37,7 @@ export const Navbar = () => {
                     {navbarItems.map((item, index) => (
                         <NavItem
                             key={index}
+                            index={index}
                             title={item.title}
                             link={item.link}
                             isActive={item.link === currentPath}
