@@ -35,6 +35,18 @@ export const NasaCollaboration = () => {
         // fetch the extra data for NASA_URLs.astronomyPicOfTheDay and save it to the dailyImg state variable
     }, []);
 
+    const RoverPhoto = ({ src, date, roverName }) => (
+        <div className="rover-photo">
+            <h3>{roverName}</h3>
+            <p>Date: {date}</p>
+            <img
+                src={src}
+                alt={`Photo by rover ${roverName}`}
+                className={styles.nasaPicOfTheDayImg}
+            />
+        </div>
+    );
+
     return (
         <div className="fullBGpicture">
             <main className="mainContent">
