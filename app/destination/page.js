@@ -7,6 +7,8 @@ import PlanetWishListItem from "@/components/destination/PlanetWishlistItem";
 import PlanetCard from "@/components/destination/PlanetCard";
 import planetsData from "@/data/planetsData.json";
 
+import styles from "@/components/destination/destination.module.css";
+
 export const Destinations = () => {
     const [selectedPlanets, onAddPlanet] = useState([]);
 
@@ -45,20 +47,20 @@ export const Destinations = () => {
                     {/* Convert the list, so it is using selectedPlanets.map() to display the items  */}
                     {/* Implement the "REMOVE" function */}
                     {/* uncomment the following code snippet: */}
-                    {/* 
-          <h3>Your current wishlist</h3>
-          <div className={styles.wishlistList}>
-            <PlanetWishlistItem 
-              name="europa"
-              onRemove={() => removeFromWishlist('europa')}
-              thumbnail="/destination/image-europa.png"
-            />
-            <PlanetWishlistItem 
-              name="europa"
-              onRemove={() => removeFromWishlist('europa')}
-              thumbnail="/destination/image-europa.png"
-            />
-          </div> */}
+
+                    {/* <h3>Your current wishlist</h3>
+                    <div className={styles.wishlistList}>
+                        <PlanetWishListItem
+                            name="europa"
+                            onRemove={() => removeFromWishlist("europa")}
+                            thumbnail="/destination/image-europa.png"
+                        />
+                        <PlanetWishListItem
+                            name="europa"
+                            onRemove={() => removeFromWishlist("europa")}
+                            thumbnail="/destination/image-europa.png"
+                        />
+                    </div> */}
                 </section>
                 <section className="card">
                     <h2>Possible destinations</h2>
