@@ -50,23 +50,24 @@ export const NasaCollaboration = () => {
                         <p>Loading Astronomy Picture of the Day...</p>
                     )}
                 </section>
-
                 <section className="card">
                     <h2>Rover Photos</h2>
-                    {roverPhoto?.photos?.length ? (
-                        <>
-                            {roverPhoto.photos.map((photo) => (
-                                <RoverPhoto
-                                    key={photo.id}
-                                    src={photo.img_src}
-                                    date={photo.earth_date}
-                                    roverName={photo.rover.name}
-                                />
-                            ))}
-                        </>
-                    ) : (
-                        <p>Loading rover photos...</p>
-                    )}
+                    <div className={styles.roverPhotoContainer}>
+                        {roverPhoto?.photos?.length ? (
+                            <>
+                                {roverPhoto.photos.map((photo) => (
+                                    <RoverPhoto
+                                        key={photo.id}
+                                        src={photo.img_src}
+                                        date={photo.earth_date}
+                                        roverName={photo.rover.name}
+                                    />
+                                ))}
+                            </>
+                        ) : (
+                            <p>Loading rover photos...</p>
+                        )}
+                    </div>
                 </section>
             </main>
         </div>
