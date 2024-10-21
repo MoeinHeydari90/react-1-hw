@@ -1,12 +1,24 @@
 .app {
-  background-color: black;
-  width: 100vw;
-  height: 100vh;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
 }
 
-
 .nasaPicOfTheDayImg {
-  width: auto;
-  height: 400px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.roverPhotoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
