@@ -17,29 +17,33 @@ export const NasaCollaboration = () => {
     const [roverPhoto, setRoverPhoto] = useState({});
 
     useEffect(() => {
-        const fetchRoverPhotos = async () => {
-            const roverPhotoResponse = await fetch(NASA_URLs.marsRoverPhoto).then((response) =>
-                response.json()
-            );
-            setRoverPhoto(roverPhotoResponse);
-        };
         const fetchDailyImg = async () => {
             const dailyImgResponse = await fetch(NASA_URLs.astronomyPicOfTheDay).then((response) =>
                 response.json()
             );
             setDailyImg(dailyImgResponse);
         };
-        fetchRoverPhotos();
+        const fetchRoverPhotos = async () => {
+            const roverPhotoResponse = await fetch(NASA_URLs.marsRoverPhoto).then((response) =>
+                response.json()
+            );
+            setRoverPhoto(roverPhotoResponse);
+        };
+
         fetchDailyImg();
-    }, []);
+        fetchRoverPhotos();
+    }, []); // []: This ensures the data fetching happens only once, when the component first mounts.
 
     return (
         <div className="fullBGpicture">
             <main className="mainContent">
                 <h1>Collaboration with NASA</h1>
+
                 <section className="card">
                     <h2>Astronomy Picture of the day</h2>
 
+                    {/*The optional chaining (?.) ensures that we don't attempt 
+                    to access 'url' if 'dailyImg' is undefined or null.*/}
                     {dailyImg?.url ? (
                         <>
                             <h3>{dailyImg.title}</h3>
@@ -50,9 +54,11 @@ export const NasaCollaboration = () => {
                         <p>Loading Astronomy Picture of the Day...</p>
                     )}
                 </section>
+
                 <section className="card">
                     <h2>Rover Photos</h2>
                     <div className={styles.roverPhotoContainer}>
+                        {/*Optional chaining (?.) prevents errors if 'roverPhoto' or 'photos' is undefined or null. */}
                         {roverPhoto?.photos?.length ? (
                             <>
                                 {roverPhoto.photos.map((photo) => (
